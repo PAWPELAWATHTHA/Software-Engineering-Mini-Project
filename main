@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>BOOK AWAY</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="top-nav">
+                <div class="logo">
+                    <img src="C:/Users/User/Desktop/RailwayBooking/logo.png" alt="Logo">
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#bookings">Bookings</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#customercare">Customer Care</a></li>
+                </ul>
+
+                <button onclick="openModal('signupModal')">Sign up</button>
+
+                 <!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('loginModal')">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="email" required placeholder="Enter your email">
+            
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="password" required placeholder="Enter your password">
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- Sign-Up Modal -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('signupModal')">&times;</span>
+        <h2>Sign Up</h2>
+        <form>
+            <label for="signupName">Name:</label>
+            <input type="text" id="signupName" name="name" required placeholder="Enter your name">
+            
+            <label for="signupEmail">Email:</label>
+            <input type="email" id="signupEmail" name="email" required placeholder="Enter your email">
+            
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="password" required placeholder="Enter a password">
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    </div>
+            </div>
+
+            <div class="text-box">
+                
+                 
+                    <h1>WE HELP YOU TO<br>DESIGN YOUR JOURNEY</h1>
+                    <button onclick="openModal('loginModal')" class="center-login-button">Login</button>
+                
+            </div>
+        </div>
+        <section id="home" class="features">
+            <div class="feature">
+                <h2>Ticket booking</h2>
+                <ul>
+                    <li>Book a ticket</li><br>
+                    <li>Round trip offers</li><br>
+                    <li>Group travel</li>
+                </ul>
+            </div>
+            <div class="feature">
+                <h2>Train Schedule</h2>
+                <ul>
+                    <li>Live train status</li><br>
+                    <li>Train time tables</li><br>
+                    <li>Station information</li>
+                </ul>
+            </div>
+            <div class="feature">
+                <h2>Deals and discounts</h2>
+                <ul>
+                    <li>Seasonal discounts</li><br>
+                    <li>Loyalty rewards</li><br>
+                    <li>Student and senior offers</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <section id="about">
+        <main class="main-content">
+            <section class="about-us">
+                <div class="container_main">
+                    <h2 style="color:#35633f">About Us</h2>
+                    <p>
+                        Welcome to Book Away, your trusted partner for seamless and convenient train ticket bookings. 
+                        We aim to make your journey hassle-free with our user-friendly platform, offering real-time 
+                        updates and secure payment options.
+                    </p>
+                    
+                    <div class="mission-vision-section">
+                        <div class=container_dsgn>
+                            <div class=container1>
+                                <img src="C:/Users/User/Desktop/RailwayBooking/vision.png" width=100px, height=75px">
+                                <h3>Vision</h3>
+                                <p>
+                                    To be the most sought after land transport provider in Sri Lanka, providing unsurpassed value to our stakeholders.
+                                </p>
+                                
+                            </div>
+    
+                            <div class=container1>C:\Users\User\Desktop\RailwayBooking/mission.png" width=100px, height=75px">
+                                <h3>Mission</h3>
+                                <p>
+                                    To revolutionize train travel by providing an efficient, accessible, and reliable booking 
+                                    experience for passengers across the globe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 style="color:#35633f">Why Choose Us?</h3>
+                    <ul>
+                        <li>Real-time ticket availability and booking</li>
+                        <li>Secure and multiple payment options</li>
+                        <li>24/7 customer support</li>
+                        <li>Detailed travel information and assistance</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </section>
+
+    <section id="bookings">
+    <div class="container">
+        <h1>Railway Reservation System</h1>
+        <h2>Book Your Ticket</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="train">Select Train:</label>
+            <select id="train" name="train" required>
+                <option value="">--Select Train--</option>
+                <option value="train1">Train 1</option>
+                <option value="train2">Train 2</option>
+                <option value="train3">Train 3</option>
+            </select>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class" required>
+                <option value="">--Select Class--</option>
+                <option value="sleeper">Sleeper</option>
+                <option value="ac">AC</option>
+                <option value="first-class">First Class</option>
+                <option value="second-class">Second Class</option>
+                <option value="third-class">Third Class</option>
+            </select>
+
+            <button class="submit">Book Now</button>
+        </form>
+    </div>
+    </section>
+
+    <section id="schedule">
+        <div class="container">
+            <h1>Train Schedule</h1>
+            <div class="search-section">
+                <div>
+                    <label for="start-station">Start Station</label>
+                    <input type="text" id="start-station" placeholder="Search">
+                </div>
+                <div>
+                    <label for="end-station">End Station</label>
+                    <input type="text" id="end-station" placeholder="Search">
+                </div>
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                </div>
+                <button>Search</button>
+            </div>
+    
+            <table>
+        <thead>
+            <tr>
+                <th>Train No</th>
+                <th>Name</th>
+                <th>Departure Station Time</th>
+                <th>Arrival Station Time</th>
+                <th>Frequency</th>
+                <th>Service</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>5</td><td>Podi Menike</td><td>Colombo-Fort 5:55</td><td>Badulla 16:20</td><td>Daily Runs via Kandy</td><td>A, B, E</td></tr>
+            <tr><td>6</td><td>Podi Menike</td><td>Badulla 9:10</td><td>Colombo-Fort 19:45</td><td>Daily Runs via Kandy</td><td>A, B, E</td></tr>
+            <tr><td>9</td><td>Inter City Express</td><td>Colombo Fort 7:00</td><td>Kandy 9:35</td><td>Daily</td><td>C, E</td></tr>
+            <tr><td>10</td><td>Inter City Express</td><td>Kandy 15:00</td><td>Colombo-Fort 17:35</td><td>Daily</td><td>C, E</td></tr>
+            <tr><td>15</td><td>Udarata Menike</td><td>Colombo-Fort 9:45</td><td>Badulla 19:05</td><td>Daily</td><td>A, B, E</td></tr>
+            <tr><td>16</td><td>Udarata Menike</td><td>Badulla 5:55</td><td>Colombo-Fort 15:30</td><td>Daily</td><td>A, B, E</td></tr>
+            <tr><td>19</td><td>Express</td><td>Colombo-Fort 10:30</td><td>Matela 16:15</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>20</td><td>Express</td><td>Kandy 15:40</td><td>Colombo 18:55</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>23</td><td>Express</td><td>Colombo-Fort 12:40</td><td>Hatton 20:00</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>29</td><td>Inter City Express</td><td>Colombo-Fort 15:35</td><td>Kandy 18:05</td><td>Daily</td><td>C, E</td></tr>
+            <tr><td>30</td><td>Inter City Express</td><td>Kandy 6:25</td><td>Colombo-Fort 9:00</td><td>Daily</td><td>C, E</td></tr>
+            <tr><td>35</td><td>Express</td><td>Colombo-Fort 16:55</td><td>Kandy 20:00</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>36</td><td>Express</td><td>Matale 5:15</td><td>Colombo-Fort 10:10</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>39</td><td>Express</td><td>Matale 13:15</td><td>Kandy 21:00</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>40</td><td>Express</td><td>Kandy 5:25</td><td>Matale 13:15</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>45</td><td>Night Mail</td><td>Colombo-Fort 19:40</td><td>Badulla 6:30</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>46</td><td>Night Mail</td><td>Badulla 17:45</td><td>Colombo-Fort 4:40</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>47</td><td>Night Mail</td><td>Colombo-Fort 22:00</td><td>Badulla 8:45</td><td>Daily</td><td>A, B, D, F</td></tr>
+            <tr><td>48</td><td>Night Mail</td><td>Badulla 19:50</td><td>Colombo-Fort 5:50</td><td>Daily</td><td>A, B, D, F</td></tr>
+            <tr><td>50</td><td>Night Mail</td><td>Matara 18:30</td><td>Trincomalee 8:45</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>51</td><td>Night Mail</td><td>Trincomalee 17:00</td><td>Matara 7:15</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>56</td><td>Gaalu Kumari</td><td>Maradana 13:40</td><td>Matara 18:40</td><td>Monday to Friday</td><td>A, B</td></tr>
+            <tr><td>57</td><td>Gaalu Kumari</td><td>Matara 7:25</td><td>Maradana 11:50</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>58</td><td>Ruhunu Kumari</td><td>Maradana 15:50</td><td>Matara 19:30</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>59</td><td>Ruhunu Kumari</td><td>Matara 5:40</td><td>Maradana 9:20</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>77</td><td>Yaldeve</td><td>Colombo-Fort 5:45</td><td>Vavuniya 11:50</td><td>Daily</td><td>A, B, G</td></tr>
+            <tr><td>78</td><td>Yaldeve</td><td>Vavuniya 13:15</td><td>Colombo-Fort 19:20</td><td>Daily</td><td>A, B, G</td></tr>
+            <tr><td>82</td><td>Express</td><td>Trincomalee 9:45</td><td>Colombo-Fort 17:45</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>85</td><td>Rajarata Rajini</td><td>Matara 9:15</td><td>Vavuniya 20:25</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>86</td><td>Rajarata Rajini</td><td>Vavuniya 3:15</td><td>Matara 14:15</td><td>Daily</td><td>A, B</td></tr>
+            <tr><td>89</td><td>Night Mail</td><td>Colombo-Fort 21:30</td><td>Vavuniya 4:25</td><td>Daily</td><td>A, B, D, F</td></tr>
+            <tr><td>90</td><td>Night Mail</td><td>Vavuniya 21:30</td><td>Colombo-Fort 4:50</td><td>Daily</td><td>A, B, D, F</td></tr>
+            <tr><td>94</td><td>Intercity Train/Express</td><td>Colombo-Fort 16:45</td><td>Galle 19:15</td><td>Daily</td><td>C</td></tr>
+            <tr><td>95</td><td>Intercity Train/Express</td><td>Galle 7:40</td><td>Colombo-Fort 10:00</td><td>Daily</td><td>C</td></tr>
+            <tr><td>96</td><td>Express train</td><td>Colombo-Fort 15:55</td><td>Vavuniya 20:40</td><td>Daily</td><td>A</td></tr>
+            <tr><td>97</td><td>Express train</td><td>Vavuniya 5:45</td><td>Colombo-Fort 10:25</td><td>Daily</td><td>A</td></tr>
+    
+        </tbody>
+    </table>
+    
+        </div>
+    </section>
+
+    <section id="customercare">
+        <font face="Times new roman">
+            <section class="reviews-section">
+               <h1><b>☆ Reviews</h1>
+               <div class="reviews-container">
+                   <!-- Review 1 -->
+                   <div class="review-card">
+                       <div class="review-header">
+                           <img src="C:/Users/User/Desktop/RailwayBooking/boy.jpg" alt="Customer 1" class="customer-photo" width="50px" height="50px">
+                           <div class="customer-info">
+                               <h3>Mary Perera</h3>
+                               
+                           </div>
+                       </div>
+                       <p class="review-text"><i>
+                           "Booking trains used to be tedious. Then I found this site. Now, I access detailed schedules instantly.
+                           If questions arise, support responds quickly.Consequently, I rely on it for every journey.The result?
+                           Stress-free train travel, every time."
+                       </i></p>
+                       <div class="review-rating">★★★★★</div>
+                   </div>
+       
+                   <!-- Review 2 -->
+                                   <div class="review-card">
+                           <div class="review-header">
+                               <img src="C:/Users/User/Desktop/RailwayBooking/girl.jpg" alt="Customer Photo" class="customer-photo"width="50px" height="50px">
+                               <div class="customer-info">
+                                   <h3>John Fernando</h3>
+                                   
+                               </div>
+                           </div>
+                           <p class="review-text"><i>
+                               "The interface is user-friendly, and the search feature allows me to
+                               find the perfect train in seconds. The booking process was smooth,from the payment to my e-ticket and also I liked the option to choose my seat. 
+                                Highly recommended!"
+                           </i></b></p>
+                           <div class="review-rating">★★★★★</div>
+                       </div>
+       
+                       
+                   </div>
+               </div>
+               <br><br>       
+       
+         <main class="main-content">
+           <section class="contact-section">
+             <h2><s>  </s> Contact Us</h2>
+             <form class="contact-form">
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name" placeholder="Enter your name" required >
+       
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" placeholder="Enter your email" required>
+       
+               <label for="message">Message:</label>
+               <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+       
+               <button type="submit">Submit</button>
+             </form>
+           </section>
+         </main>
+          </font> 
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <br>
+                <p><B>Follow us</B></p>
+                <br>
+                <div>
+                    <a href="#"><img src="C:/Users/User/Desktop/RailwayBooking/whatsapp.PNG" height="auto" width="auto"></a>
+                    <a href="#"><img src="C:/Users/User/Desktop/RailwayBooking/twitter.PNG"></a>
+                    <a href="#"><img src="C:/Users/User/Desktop/RailwayBooking/facebook.PNG"></a>
+                    <a href="#"><img src="C:/Users/User/Desktop/RailwayBooking/instagram.PNG"></a>
+                    <br>
+                <p>FAQ | Contact us | About us</p>
+                <br>
+                <p>Email: info@bookaway.com</p>
+                <p>Address: No.2/123, Colombo, Sri Lanka</p>
+                <p>Phone: +01 234 567 88 | +01 234 567 89</p>
+                </div>
+                <br>
+                <h3><B>BOOKAWAY.COM<B></h3>
+            </div>    
+         </div>
+            <section>
+            <div class="copyright">
+                <p>© 2024 Copyright: BOOKAWAY.com</p>
+                <p class="terms"><u>Terms and conditions</u></p>
+            </div>
+        </section>
+        </div>
+    </footer> 
+    </body>
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+    
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+            }
+        };
+    </script>    
+    </html>
