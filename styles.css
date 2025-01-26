@@ -1,0 +1,587 @@
+/*home styling*/
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppind',sans-serif;
+    box-sizing:border-box;
+}
+
+/*Header styling*/
+.header{
+    width:100%;
+    height:100vh;
+    background:black;
+    padding-left:3%;
+    padding-right:3%; 
+    position: relative;   
+    background-image: url(C:/Users/User/Desktop/RailwayBooking/bgnew.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /*background-position: 100% 100%;*/
+}
+
+/*Navigation bar*/
+.top-nav{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:30px 0 0px;
+    border-bottom: 2px solid #bababa;
+}
+.top-nav .logo img {
+    height: 80px;
+    width:auto;
+    padding:0px; 
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 70px; /* Adjust the gap between nav items */
+}
+
+.top-nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.top-nav ul li a{
+   text-decoration: none;
+   color:#fff;
+   font-size:15px; 
+}
+
+.top-nav ul li a:hover{
+   color:rgb(255, 238, 0);
+}
+
+.top-nav button{
+    background:rgba(248, 244, 3, 0.493);
+    color: black;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 10px;
+    cursor:pointer;
+}
+
+.top-nav button:hover{
+    background-color:black;
+    color:white;
+}
+/* Modal Styling */
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 50;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*body*/
+.text-box {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center align text */
+    color: rgb(250, 225, 4);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-box h1 {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 95px;
+    color: yellow;
+    margin-bottom: 30px; /* Add space below the title */
+}
+
+.text-box button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    background-color: #d3b50f8f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.text-box button:hover {
+    background-color: #0e0d0d;
+}
+
+
+ .features {
+    display: flex;
+    justify-content:center;
+    padding:10px;
+    background-color: #060a1b;
+    height:300px;
+    width:auto;
+    align-items:normal;
+    /*margin-top:50px;
+    margin-bottom:50px;*/
+    gap:78px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.feature {
+    text-align: center;
+    background-color: #93e2f0;
+    padding: 20px;
+    border-radius: 30px;
+    width: 200px;
+    height:auto;
+    
+}
+
+.feature ul {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+body {
+    font-family: Times New Roman;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/*About us styling*/
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+.mission-vision-section {
+	background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+.container_main{
+	background-color:#dae3dc;
+	padding:20px;
+}
+
+.container_dsgn {
+	 width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.container1 {
+	background-color: #f2f4f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	height:250px;
+}
+
+.main-content {
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/*Bookings styling*/
+.container {
+    margin: 2rem auto;
+    max-width: 800px;
+    background: rgb(91, 211, 241);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+
+h1 {
+    text-align: center;
+    color: #034111;
+}
+
+h2 {
+    text-align:center;
+    color:rgb(47, 7, 75);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input, select, button {
+    padding: 0.75rem;
+    border: 1px solid #068d28;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: rgb(6, 28, 90);
+    color: rgb(247, 247, 252);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(71, 16, 175);
+}
+
+
+.search-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.search-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.search-section input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-section input:focus {
+    border-color: #004d00;
+}
+
+.search-section button {
+    padding: 8px 16px;
+    background-color: #004d00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.search-section button:hover {
+    background-color: #003300;
+}
+
+/* Schedule styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #004d00;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*Customer care styling*/
+.main-content {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background:#f0fcf4;
+    border: 1px solid #8bf7ab;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f0eb; 
+    color: #333;
+}
+       
+.reviews-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #dedede;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center-right;
+}
+       
+.reviews-section h1 {
+    font-size: 2rem;
+    color: #1a1c1a; 
+    margin-bottom: 20px;
+}
+       
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+       
+.review-card {
+    background-color: #f0fcf4; 
+    border: 1px solid #8bf7ab; 
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+       
+.review-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+       
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+       
+.customer-photo {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+       
+.customer-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #1a1c1a; 
+}
+       
+.customer-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color:#1a1c1a; 
+}
+       
+.review-text {
+    font-size: 1em;
+    color: #37474f; 
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+       
+.review-rating {
+    font-size: 1.8em;
+    color: #ff6f00; 
+    text-align: right;
+}
+  
+.contact-section h2 {
+    text-align: center-right;
+    font-size:2rem;
+    margin-bottom: 1.5rem;
+    color: #1a1c1a;
+}
+  
+.contact-form {
+    font-family:Times New Roman;
+    display: flex;
+    flex-direction: column;
+}
+  
+.contact-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family:Times New Roman;
+}
+  
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #434543;
+    outline: none;
+    font-family:Times New Roman;
+}
+  
+.contact-form button {
+    background-color:#1a1c1a;
+    color: white;
+    font-family:Times New Roman;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+.contact-form button:hover {
+    background-color: #434543;
+}
+
+/*Footer styling*/
+.footer{
+    height:200px;
+}
+
+.footer .social-links img {
+    width: 24px;
+    margin: 0 px;
+}
+.footer-container {
+    height:250px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: black; /* Adjust the background color as needed */
+    padding: 0px;
+    color:rgb(246, 250, 4);
+}
+
+.social-links {
+    flex: 1;
+    text-align: center; /* Center-align content for better visuals */
+}
+.copyright {
+    flex: 1 ;
+    text-align: center; /* Center-align content for better visuals */
+    color:black;
+    background-color:white;
+}
+
+.social-links img {
+    margin: 5px;
+    height: 24px; /* Adjust icon size */
+    width: 24px;
+}
+
+.social-links img:hover{
+    position: inherit;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.copyright p {
+    margin: 0px 0;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.terms{
+    color:blue;
+    font-size:11px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
